@@ -1,0 +1,131 @@
+<html>
+<head>
+<style type="text/css">
+p{text-align:justify}
+.icdiv{height:150px; width:150px; float:left;border:2px red solid;margin:50px}
+nav{width:200px;border:1px red solid;float:left}
+ul{list-style-image:url(ajax-loader.gif)}
+section{margin-left:200px;border:2px blue solid;text-align:justify}
+</style>
+</head>
+<body>
+<img style="float:right" src="flas.Gif" title="FLAŞ FLAŞ FLAŞ" alt="flaş"/>
+<img style="float:left;max-height:150px" src="Tulips.jpg" title="Lale" alt="lale"/>
+<p>@echo off
+rem Licensed to the Apache Software Foundation (ASF) under one or more
+rem contributor license agreements.  See the NOTICE file distributed with
+rem this work for additional information regarding copyright ownership.
+rem The ASF licenses this file to You under the Apache License, Version 2.0
+rem (the "License"); you may not use this file except in compliance with
+rem the License.  You may obtain a copy of the License at
+rem
+rem     http://www.apache.org/licenses/LICENSE-2.0
+rem
+rem Unless required by applicable law or agreed to in writing, software
+rem distributed under the License is distributed on an "AS IS" BASIS,
+rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+rem See the License for the specific language governing permissions and
+rem limitations under the License.
+
+if "%OS%" == "Windows_NT" setlocal
+rem ---------------------------------------------------------------------------
+rem NT Service Install/Uninstall script
+rem
+rem Options
+rem install                Install the service using Tomcat7 as service name.
+rem                        Service is installed using default settings.
+rem remove                 Remove the service from the System.
+rem
+rem name        (optional) If the second argument is present it is considered
+rem                        to be new service name
+rem
+rem $Id: service.bat 1000718 2010-09-24 06:00:00Z mturk $
+rem ---------------------------------------------------------------------------
+
+rem ---------XAMPP-------------------------------------------------------------
+::::::::::::::::::::::::::::::::::::
+::  Set JAVA_HOME or JRE_HOME     ::
+::::::::::::::::::::::::::::::::::::
+</p>
+<br/>
+
+<div class="icdiv" style="background-color:blue"></div>
+<div class="icdiv" style="background-color:maroon"></div>
+<div class="icdiv" style="background-color:green"></div>
+<div class="icdiv" style="background-color:pink"></div>
+
+<div style="clear:left;margin:50px">
+<nav>
+<ul>
+<li>Home</li>
+<li>Taco Menu</li>
+<li>Draftlist</li>
+<li>Hours</li>
+<li>Directions</li>
+<li>Contact</li>
+</ul>
+</nav>
+<section>echo.
+echo [XAMPP]: Searching for JDK or JRE HOME with reg query ...
+set JDKKeyName64=HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit
+set JDKKeyName32=HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\Java Development Kit
+set JREKeyName64=HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment
+set JREKeyName32=HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\JavaSoft\Java Runtime Environment
+</section>
+<section>:FINDJRE32
+reg query "%JREKeyName32%" /s
+if %ERRORLEVEL% EQU 1 (
+	echo . [XAMPP]: Could not find 32 bit JRE
+	echo . [XAMPP]: Could not set JAVA_HOME or JRE_HOME. Aborting
+	goto ENDERROR
+)
+set KeyName=%JREKeyName32%
+goto JRERUN
+
+:JDKRUN
+echo.
+echo [XAMPP]: Using JDK
+set "CURRENT_DIR=%cd%"
+set "CATALINA_HOME=%CURRENT_DIR%\tomcat"
+
+set Cmd=reg query "%KeyName%" /s
+for /f "tokens=2*" %%i in ('%Cmd% ^| find "JavaHome"') do set JAVA_HOME=%%j
+
+echo.
+echo [XAMPP]: Seems fine!
+echo [XAMPP]: Set JAVA_HOME : %JAVA_HOME%
+echo [XAMPP]: Set CATALINA_HOME : %CATALINA_HOME%
+echo.
+
+if %ERRORLEVEL% == 0 (
+	del /F/Q tomcat\logs\catalina.pid
+)
+
+"%CATALINA_HOME%\bin\catalina.bat" stop
+goto END
+
+</section>
+</div>
+<div style="margin:auto">
+	<div style="float:left;height:500px;width:200px;background-color:magenta">
+	</div>
+	<div style="float:left;height:500px;width:600px;background-color:lime">
+		<div style="width:60%;float:left;height:50%;background-color:red">
+		</div>
+		<div style="width:40%;float:right;height:50%;background-color:blue">
+		</div>
+		<div style="clear:both;width:100%;height:50%;background-color:maroon">
+			<div style="float:left;width:25%;height:75%;background-color:green;margin:25px">
+			</div>
+			<div style="float:left;width:25%;height:75%;background-color:green;margin:25px">
+			</div>
+			<div style="float:left;width:25%;height:75%;background-color:green;margin:25px">
+			</div>
+		</div>
+	</div>
+</div>
+<div style="clear:left;margin:50px">
+<p style="visibility:hidden"> adasdas</p>
+</div>
+</body>
+</html>

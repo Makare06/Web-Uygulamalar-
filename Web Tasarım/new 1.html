@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Formlar</title>
+</head>
+<body>
+<form method="POST"><tr>
+<table boreder="0">
+<td>İsim :</td>
+<td><input type="text" name="isim" value="Web Tasarım..." readonly  /><br/></td></tr>
+<tr>
+<td>Soyisim :</td>
+<td><input type="text" name="soyisim" size="30"/><br/></td></tr>
+<tr>
+<td>Şifre : </td>
+<td><input type="password" name="sifre" maxlength="8"/><br/></td></tr>
+<tr>
+
+<td>Şifre Tekrarı: </td>
+<td><input type="password" name="sifretekrari" maxlength="8"/><br/></td>
+</tr>
+<tr>
+<td>Doğum Yılı :</td>
+<td><input type="text" name="soyisim" maxlength="4" size="1"/><br/></td>
+</tr>
+<tr>
+<td>Özgeçmiş :</td>
+<td><textarea name="ozgecmis" rows="10"  cols="22" ></textarea><br/></td>
+</tr>
+<tr>
+<td>Ülkeler : </td> </tr>
+<tr>
+<td><input type="checkbox" name="ulke1" value="USA" /> ABD <br/></td>
+<td><input type="checkbox" name="ulke1" value="DE" checked="true"/> Almanya <br/>
+<input type="checkbox" name="ulke1" value="EN" /> İngiltere <br/>
+<input type="radio" name="cins" value="bay">Bay<br/>
+<input type="radio" name="cins" value="bayan">Bayan<br/>
+<input type="radio" name="cins" value="x">X<br/></td>
+
+<tr><select name="iller" size="1">
+<optgroup label="marmara">
+<option>İstanbul</option>
+<option selected="true">Kocaeli</option>
+<option>Tekirdağ</option>
+</optgroup></tr>
+<optgroup label="ege">
+<option>İzmir</option>
+<option>Afyon</option>
+<option>Muğla</option>
+</optgroup></tr>
+</select><br/>
+CV:<input type="file" name="dosya"><br/>
+<input type="reset" value="TEMİZLE" />
+<input type="submit" value="GÖNDER" />
+</form>
+</body>
+</html>

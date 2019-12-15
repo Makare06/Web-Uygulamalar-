@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+	
+		#ust{
+			height: 90px;
+			width: 1349px;
+			background-color: #521010;
+			margin-top: -8px;
+			margin-left: -8px;
+		}
+		#logo {
+			margin-left: 100px;
+			margin-top: -80px;		
+		}
+		#yazi{
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			font-size: 20px;
+			margin-left: 210px;	
+			margin-top: -60px;
+			font-weight: bold;
+		}
+		div > h1{
+			float: right;
+			margin-top: -15px;
+			margin-right: 90px;
+			font-size: 20px;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			font-weight: bold;
+		}
+		div > h1 a{
+			text-decoration: none;
+			color:#9c9191;	
+		}
+		div > h1 a:hover{
+			color:#1c090b;
+		}
+		#solkose{
+			width:180px;
+			height:410px;
+			background-color: #888580;
+			margin-top: 43px;
+			margin-left: -8px;
+			
+				
+		}
+		#menum{
+			margin-top: 70px;
+			margin-left: 20px;
+			position:absolute;
+		}
+		 
+  #menum ul {
+    list-style:none;
+	margin:0px; padding:0px; 
+		}
+  #menum li {
+	  float:left;
+	  position:relative;
+	  width:150px;
+		}
+  #menum li ul {
+    display:none;
+	  left:0;
+	  position:absolute;
+	  top:21px; 
+		}
+  #menum ul li a{
+    background:#EFEFEF;
+    border-color:#CCCCCC #888888 #555555 #BBBBBB;
+    border-style:solid;
+    color:#000;
+    display:block;
+    font:bold 12px Arial, Helvetica, Sans-serif;
+    margin:0px;
+    padding:2px 3px;
+   text-decoration:none;
+    line-height:16px; 
+		}
+  #menum ul li a:hover {
+    background-color:#FFF;
+	  color:#FF0000;
+		}
+  #menum li:hover ul { 
+	  display:block;
+		}
+		.d-menu{
+    background: #333;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.d-menu ul li{
+   list-style: none;
+}
+ 
+.d-menu ul{
+    margin: 0;
+    padding: 0;
+}
+ 
+.d-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-bottom:1px solid #282828;
+}
+ 
+.d-menu ul li ul {
+	display:none;
+}
+ 
+.d-menu ul li:hover ul {
+	display:block;
+	position:absolute;
+    margin:-40px 0 0 250px;
+}
+ 
+.d-menu ul li ul li a {
+	padding:10px;
+	font-size:15px;
+	background-color: #282828;
+	border-bottom:1px solid #222;
+	
+	width:170px;
+}
+		.d-menu {
+			margin-left: 5px;
+			margin-top:49px;
+		}
+		#anasayfa{
+			border-left:3px  sol;
+		}
+		#anasayfa a:hover{
+			border-left:10px #D81D20 solid;
+			background-color: aqua;
+		}
+
+	</style>
+<meta charset="utf-8">
+<title>Baþlýksýz Belge</title>
+</head>
+
+<body>
+<div id="ust">
+	</div>
+	<div id="logo"><a href="#"><img src="Adsýz.JPG" alt="logo" width="100px" height="70px"  /></a> </div>
+	<article id="yazi">
+	<b>HAYMANA.com</b>
+	</article>
+	<div>
+		<h1><a href="#" >Üyelik Paneli </a></h1>
+	<h1><a href="#"> En Ýyi 10 Yer</a></h1>
+	<h1><a href="#">Anasayfa </a></h1>
+	</div>
+		<div class="d-menu">
+    <ul>
+        <li><a href="" title="" id="anasayfa">ANASAYFA</a></li>
+        <li><a href="" title="">WEB TASARIM</a>
+            <ul>
+                <li><a href="" title="">HTML</a></li>
+                <li><a href="" title="">CSS</a></li>
+                <li><a href="" title="">JAVASCRIPT</a></li>
+                <li><a href="" title="">PHP</a></li>
+                <li><a href="" title="">ASP.NET</a></li>
+            </ul>
+        </li>
+        <li><a href="" title="">PROGRAMLAMA</a>
+            <ul>
+                <li><a href="" title="">C#</a></li>
+                <li><a href="" title="">C++</a></li>
+                <li><a href="" title="">VB.NET</a></li>
+                <li><a href="" title="">ANDROID</a></li>
+                <li><a href="" title="">ARDUINO</a></li>
+            </ul>
+        </li>
+        <li><a href="" title="">GRAFÝK</a>
+            <ul>
+                <li><a href="" title="">PAINT</a></li>
+                <li><a href="" title="">FIREWORKS</a></li>
+                <li><a href="" title="">PHOTOSHOP</a></li>
+                <li><a href="" title="">ILLUSTRATOR</a></li>
+            </ul>
+        </li>
+        <li><a href="" title="">HAKKIMDA</a></li>
+        <li><a href="" title="">ÝLETÝÞÝM</a></li>
+    </ul>
+</div>
+</body>
+</html>

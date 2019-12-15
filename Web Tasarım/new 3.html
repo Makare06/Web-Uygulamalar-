@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Formlar</title>
+</head>
+<body>
+<form method="POST">
+İsim : <input type="text" name="isim" value="Web Tasarım..." readonly  /><br/>
+Soyisim :<input type="text" name="soyisim" size="30"/><br/>
+Memleket :<input type="text" name="memleket" size="50"/><br>
+Şifre : <input type="password" name="sifre" maxlength="8"/><br/>
+Şifre Tekrarı: <input type="password" name="sifretekrari" maxlength="8"/><br/>
+Doğum Yılı :<input type="text" name="soyisim" maxlength="4" size="1"/><br/>
+Tecrübe     :<textarea name="tecrübe" rows="10"  cols="22" ></textarea><br/>
+Özgeçmiş :<textarea name="ozgecmis" rows="10"  cols="22" ></textarea><br/>
+Ülkeler : <input type="checkbox" name="ulke1" value="USA" /> ABD <br/>
+<input type="checkbox" name="ulke1" value="DE" checked="true"/> Almanya <br/>
+<input type="checkbox" name="ulke1" value="EN" /> İngiltere <br/>
+<input type="radio" name="cins" value="bay">Bay<br/>
+<input type="radio" name="cins" value="bayan">Bayan<br/>
+<input type="radio" name="cins" value="x">X<br/>
+<select name="iller" size="1">
+<optgroup label="marmara">
+<option>İstanbul</option>
+<option selected="true">Kocaeli</option>
+<option>Tekirdağ</option>
+</optgroup>
+<optgroup label="karadeniz">
+<option>trabzon</option>
+<option>tokat</option>
+<option>samsun</option>
+</optgroup>
+<optgroup label="ege">
+<option>izmir</option>
+<option>afyon</option>
+<option>muğla</option>
+</optgroup>
+</select><br/>
+CV:<input type="file" name="dosya"><br/>
+<input type="reset" value="TEMİZLE" />
+<input type="submit" value="GÖNDER" />
+</form>
+</body>
+</html>

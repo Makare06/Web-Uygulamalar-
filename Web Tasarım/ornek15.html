@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS 3</title>
+<meta charset="utf-8" />
+<style text="text/css">
+td {text-align:center}
+.tablo1 {border-collapse:collapse}
+.tablo2 {border-collapse:seperate;border-spacing:10px}
+.tablo3 {border-collapse:seperate;border-spacing:10px 20px;caption-side:bottom}
+.tablo4 {border-collapse:seperate;empty-cells:hide}
+.tablo5 {table-layout:auto}
+.tablo6 {table-layout:fixed}
+.circle {list-style-type:circle;list-style-position:inside}
+.square {list-style-type:square;list-style-position:inside;list-style-image:url(flas.Gif)}
+.upper-roman{list-style-type:upper-roman}
+.lower-latin{list-style:lower-latin inside}
+
+img.normal{height:auto}
+img.normal2{width:auto}
+img.kucuk{height:100px}
+img.max-yuksek{max-height:100px;max-width:100px}
+img.max-yuksek1{max-width:100px}
+img.max-yuksek2{max-height:100px}
+img.min-yuksek{min-height:100px;min-width:100px}
+img.min-yuksek1{min-width:100px}
+img.min-yuksek2{min-height:100px}
+</style>
+</head>				
+<body>
+<p>Daire</p>
+<ol class="circle">
+<li>XHTML</li>
+<li>CSS</li>
+<li>XML</li>
+</ol>
+<p>Kare</p>
+<ol class="square">
+<li>XHTML</li>
+<li>CSS</li>
+<li>XML</li>
+</ol>
+<p>Roma Rakamları</p>
+<ol class="upper-roman">
+<li>XHTML</li>
+<li>CSS</li>
+<li>XML</li>
+</ol>
+<p>Küçük Latin Harfleri</p>
+<ol class="lower-latin">
+<li>XHTML</li>
+<li>CSS</li>
+<li>XML</li>
+</ol>
+
+<table class="tablo1" border="2" width="200px" height="100px">
+<tr>
+	<td>Hücre 1</td>
+	<td>Hücre 2</td>
+</tr>
+<tr>
+	<td>Hücre 3</td>
+	<td>Hücre 4</td>
+</tr>
+</table>
+
+<br/>
+<table class="tablo2" border="2" width="200px" height="100px">
+<tr>
+	<td>Hücre 1</td>
+	<td>Hücre 2</td>
+</tr>
+<tr>
+	<td>Hücre 3</td>
+	<td>Hücre 4</td>
+</tr>
+</table>
+
+<br/>
+<table class="tablo3" border="2" width="200px" height="100px">
+<caption>3.Tablo Başlığı</caption>
+<tr>
+	<td>Hücre 1</td>
+	<td>Hücre 2</td>
+</tr>
+<tr>
+	<td>Hücre 3</td>
+	<td>Hücre 4</td>
+</tr>
+</table>
+
+<br/>
+<table class="tablo4" border="2" width="200px" height="100px">
+<tr>
+	<td>Hücre 1</td>
+	<td>Hücre 2</td>
+</tr>
+<tr>
+	<td></td>
+	<td>Hücre 4</td>
+</tr>
+</table>
+
+<br/>
+<table class="tablo5" border="2" width="100%" >
+<tr>
+	<td width="5%">Hücre 1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+	<td width="95%">Hücre 2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+</tr>
+</table>
+
+<br/>
+<table class="tablo6" border="2" width="100%" >
+<tr>
+	<td width="5%">Hücre 1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+	<td width="95%">Hücre 2xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</td>
+</tr>
+</table>
+<br/><br/>
+<img src="Tulips.jpg" alt="tulips" title="tulips" width="150" height="150"/>
+<img class="normal" src="Tulips.jpg" alt="tulips" title="tulips" width="150" height="150"/>
+<img class="normal2" src="Tulips.jpg" alt="tulips" title="tulips" width="150" height="150"/>
+<img class="kucuk" src="Tulips.jpg" alt="tulips" title="tulips" width="150" height="150"/>
+<br/>
+<img class="max-yuksek" src="Tulips.jpg" alt="tulips" title="tulips" />
+<img class="max-yuksek" src="Tulips.jpg" alt="tulips" title="tulips" width="90" height="90" />
+<img class="max-yuksek1" src="Tulips.jpg" alt="tulips" title="tulips" />
+<img class="max-yuksek2" src="Tulips.jpg" alt="tulips" title="tulips" />
+<img class="max-yuksek" src="goktasi-ellerinde.Jpeg" alt="goktasi" title="goktasi" />
+<img class="max-yuksek1" src="goktasi-ellerinde.Jpeg" alt="goktasi" title="goktasi" />
+<img class="max-yuksek2" src="goktasi-ellerinde.Jpeg" alt="goktasi" title="goktasi" />
+<br/>
+<img class="min-yuksek" src="deneme.png" alt="goktasi" title="goktasi" />
+<img class="min-yuksek1" src="deneme.png" alt="goktasi" title="goktasi" />
+<img class="min-yuksek2" src="deneme.png" alt="goktasi" title="goktasi" />
+</body>
+</html>
